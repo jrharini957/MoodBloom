@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodBloom 🌸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+    <h1>MoodBloom 🌸</h1>
+    <p>How are you feeling today?</p>
+
+    <div class="moods">
+      <button onclick="changeMood('happy')">😊 Happy</button>
+      <button onclick="changeMood('calm')">🌿 Calm</button>
+      <button onclick="changeMood('creative')">🎨 Creative</button>
+      <button onclick="changeMood('tired')">🌙 Tired</button>
+    </div>
+
+    <img id="moodImage" src="assets/happy.png"
+         alt="Your mood" onerror="this.style.display='none'">
+
+    <h2 id="message">Today is yours to color!</h2>
+    <div id="colors" class="colors"></div>
+
+    <button class="reset" onclick="resetMood()">
+      Reset Mood ↻
+    </button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

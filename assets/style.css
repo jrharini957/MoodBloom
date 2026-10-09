@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6e7, #d9d6ff);
+  transition: background 0.5s;
+}
+
+.card {
+  width: min(90%, 450px);
+  padding: 30px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px #7773;
+}
+
+h1 {
+  color: #a64ac9;
+}
+
+p {
+  color: #777;
+}
+
+.moods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #f0e5ff;
+  color: #633b87;
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+#moodImage {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  animation: float 2s infinite ease-in-out;
+}
+
+h2 {
+  font-size: 20px;
+  color: #7045a0;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px;
+}
+
+.swatch {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px #0002;
+}
+
+.reset {
+  background: #a64ac9;
+  color: white;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-8px);
+  }
+}
